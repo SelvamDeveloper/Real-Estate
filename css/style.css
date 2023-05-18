@@ -86,7 +86,8 @@ a {
     left: 0;
     width: 100%;
     z-index: -1;
-    min-width: 177.77vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* typography
@@ -1151,6 +1152,10 @@ textarea:focus {
     }
     .portfolio .categories-grid .categories ul li {
         float: none;
+    }
+    .sq{
+        grid-column: span 2;
+        grid-row: span 2;
     }
 }
 
