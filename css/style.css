@@ -79,7 +79,6 @@ a {
     color: #ffbf00;
     font-size: 11px;
 }
-
 .vedio{
     position: absolute;
     top: 40px;
@@ -439,6 +438,7 @@ h5 {
     display: table;
     height: 100vh;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.343);
 }
 
 .box-intro .table-cell {
