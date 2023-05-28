@@ -69,3 +69,12 @@ var img= document.getElementById("main");
 image = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8&w=1000&q=80";
 
 img.src= image;
+
+
+
+
+  
+
+
+
+
