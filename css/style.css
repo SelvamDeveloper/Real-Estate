@@ -434,11 +434,22 @@ h5 {
 ==================================================*/
 
 .box-intro {
+    position: relative;
     text-align: center;
     display: table;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.343);
+    background-color: rgba(0, 0, 0, 0.547);
+}
+.box-intro::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    z-index: -1;
+    background: linear-gradient(360deg, black, transparent);
 }
 
 .box-intro .table-cell {
@@ -983,7 +994,6 @@ footer img {
 .textarea-contact textarea {
     height: 100%;
     width: 100%;
-    border: 0;
     padding: 20px;
     background-color: transparent;
     float: left;
@@ -1010,7 +1020,7 @@ footer img {
 .input-contact {
     height: 40px;
     width: 100%;
-    border: solid 1px rgba(0, 0, 0, .1);
+    border: solid 1px rgba(255, 255, 255, 0.432);
     position: relative;
     margin-bottom: 30px;
 }
@@ -1048,7 +1058,7 @@ footer img {
     font-size: 10px;
     top: 0px;
     left: 5px;
-    background-color: #fff;
+    background-color: #000000;
     padding: 5px
 }
 
