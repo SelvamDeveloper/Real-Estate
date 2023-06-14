@@ -8,9 +8,10 @@
     <meta name="description" content="We filter a Chennai best House and Reviewed in Youtube Channel.">
     <meta name="keywords" content="simplyone, simply one, Chennai, Chennai House, Simply one Real-estate, simply one House, simply one Real-estate, Youtube chennai company, need Chennai house, Real-estate company">
     <meta name="author" content="Selvam">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Simply One - Real-estate | Chennai House</title>
+    <title>INBUITO - Real-estate | Chennai House</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1df1b0320f.js" crossorigin="anonymous"></script>
 
@@ -116,16 +117,58 @@
         <div class="col-1">
             <h1>luxuary hoser</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nobis reiciendis facilis! Atque autem ipsam ullam natus perspiciatis iure voluptates.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nobis reiciendis facilis! Atque autem ipsam ullam natus perspiciatis iure voluptates.</p>
         </div>
         <div class="col-1">
-            <video loop muted plays-inline controls src="img/01.mp4"></video>
+            <video style="width: 100%;" loop muted controls src="img/01.mp4"></video>
         </div>
     </div>
 
     <!-- slider  -->
 
-
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://img.youtube.com/vi/meh4LsL7VUQ/maxresdefault.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.youtube.com/vi/zfvRaiK_bPc/maxresdefault.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.youtube.com/vi/w8uHSLIYk-A/maxresdefault.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.youtube.com/vi/3goYBatOpck/maxresdefault.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.youtube.com/vi/zfvRaiK_bPc/maxresdefault.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jpg" alt="">
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/hMh1mR2kNl8kHjpIuPh4TICTwjo.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+              </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    
     <!-- slider  -->
 
 
@@ -176,9 +219,9 @@
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-instagram twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-youtube google-bg"></i></a>
                             </div>
                         </div>
                     </div>
@@ -255,6 +298,9 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/project.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
 
@@ -363,6 +409,29 @@
  
 });
     </script>
+
+<script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
 
 </body>
 

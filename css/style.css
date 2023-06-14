@@ -40,6 +40,15 @@ body {
     color: #999;
 }
 
+::-webkit-scrollbar{
+    background-color: #000000;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #ffd900;
+}
+
 .no-padding {
     padding-left: 0;
     padding-right: 0;
@@ -1198,11 +1207,106 @@ textarea:focus {
 
 
 /* own styles ====================================================================== */
-
+.row-1{
+    padding: 30px 10%;
+}
+.col-1 p{
+    padding: 30px 0;
+    width: 70%;
+}
 .col-1 h1{
     color: #ffffff;
 }
 
+
+/* slider ========================== */
+:root {
+    --swiper-theme-color: #ffffff;
+}
+    .swiper-wrapper{
+        height: 100px;
+        margin: auto;
+    }
+    .swiper-slide:hover img{
+      transform: scale(1.1);
+      z-index: 111;
+    }
+    .swiper-wrapper img{
+    height: 282px;
+    width: 500px;
+    transition: 0.5s;
+   }
+   img::selection{
+    background-color: transparent;
+   }
+   .swiperL::selection{
+        background-color: transparent;
+   }
+    .swiper {
+      width: 100%;
+      height: 35vh;
+      display: flex;
+      position: relative;
+    }
+    .swiper::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 111;
+      top: 0;
+      height: 100%;
+      width: 100px;
+      background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    }
+    .swiper::before{
+      content: "";
+      position: absolute;
+      right: 0;
+      z-index: 111;
+      top: 0;
+      height: 100%;
+      width: 100px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      z-index: 11111111 !important;
+      cursor: pointer;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        z-index: 11111111 !important;
+        cursor: pointer;
+    }
+    .swiper-slide {
+      width: 508.6669999999999px !important;
+      text-align: center;
+      font-size: 18px;
+      background: #ffffff00;
+      display: flex;
+      justify-content: center;
+      margin: 0 10px;
+      align-items: center;
+    }
+
+    @media (max-width: 760px) {
+
+        .swiper-slide{
+            object-fit: cover;
+            height: 300px !important;
+            width: 100% !important;
+        }
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+      img{
+        width: 100%;
+    }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }
 
 /* footer styles ====================================================================== */
 
@@ -1225,7 +1329,7 @@ ul {
   color: #F5B700;
   font-size: 30px;
   float: left;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 .cta-text {
   padding-left: 15px;
@@ -1276,24 +1380,24 @@ ul {
 }
 .footer-social-icon a {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 15px;
 }
 .footer-social-icon i {
   height: 40px;
   width: 40px;
   text-align: center;
-  line-height: 38px;
+  line-height: 41px;
   border-radius: 50%;
 }
 .facebook-bg{
-  background: #3B5998;
+  background: #25D366;
 }
 .twitter-bg{
-  background: #55ACEE;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 .google-bg{
-  background: #DD4B39;
+  background: #c00;
 }
 .footer-widget-heading h3 {
   color: #fff;
@@ -1340,7 +1444,7 @@ ul {
     position: absolute;
     right: 0;
     background: #F5B700;
-    padding: 13px 20px;
+    padding: 16px 22px;
     border: 1px solid #F5B700;
     top: 0;
 }
